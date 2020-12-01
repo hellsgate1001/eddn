@@ -50,8 +50,6 @@ def main():
                                         commodity['stock']
                                     )
                                 )
-                else:
-                    print("{} found".format(__json["$schemaRef"]))
 
         except zmq.ZMQError as e:
             print ('ZMQSocketException: ' + str(e))
