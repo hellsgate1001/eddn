@@ -39,7 +39,7 @@ def main():
 
                 if __json["$schemaRef"] == "https://eddn.edcd.io/schemas/commodity/3":
                     for commodity in __json['message']['commodities']:
-                        if commodity['name'].lower() == 'tritium' and commodity['sellPrice'] < 10000:
+                        if commodity['name'].lower() == 'tritium':
                             with open(tritium_log, 'a') as f:
                                 f.write(
                                     '{} \t{}\t{}\t{}\t{}\n'.format(
